@@ -15,6 +15,7 @@
 #sed -i 's/192.168.1.1/192.168.1.5/g' package/base-files/files/bin/config_generate
 
 rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 
 # Add a feed source
@@ -24,4 +25,3 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 echo 'src-git OpenClash https://github.com/vernesong/OpenClash' >>feeds.conf.default
 #echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 #echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-echo 'src-git themeArgon https://github.com/jerrykuku/luci-theme-argon' >>feeds.conf.default
